@@ -90,7 +90,7 @@ def cb_loss(labels, logits):
     classes = 9
     loss_type = "focal"
     beta = 0.8
-    gamma = 2
+    gamma = 2.5
     return CB_loss(labels, logits, samples_per_cls, classes, loss_type, beta, gamma)
 
 def scheduler(now_epoch):
